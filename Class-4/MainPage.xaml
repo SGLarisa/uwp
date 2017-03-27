@@ -1,4 +1,4 @@
-﻿<Page
+<Page
     x:Class="App1.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -13,7 +13,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <TextBlock x:Name="RowOneTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Hex Colour Picker" Foreground="Black" FontSize="70"/>
+            <Viewbox>
+                <TextBlock x:Name="RowOneTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Hex Colour Picker" Foreground="Black" FontSize="36" />
+            </Viewbox>
         </Grid>
 
         <Grid Grid.Row="1">
