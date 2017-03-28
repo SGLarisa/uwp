@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,23 +23,13 @@ namespace App1
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        byte Red=0;
-        byte Green=0;
-        byte Blue=0;
-        byte Alpha=255;
+        byte Red = 0;
+        byte Green = 0;
+        byte Blue = 0;
+        byte Alpha = 255;
         public MainPage()
         {
             this.InitializeComponent();
-        }
-
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void ButtonClick(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Red_Slider_Value_Changed(object sender, RangeBaseValueChangedEventArgs e)
@@ -71,7 +61,7 @@ namespace App1
 
         private void Done_Click(object sender, RoutedEventArgs e)
         {
-            BGColor.Fill = new SolidColorBrush(Color.FromArgb(Alpha,Red, Green, Blue));
+            BGColor.Fill = new SolidColorBrush(Color.FromArgb(Alpha, Red, Green, Blue));
             RowOneTextBlock.Foreground = new SolidColorBrush(Color.FromArgb(Alpha, Red, Green, Blue));
         }
     }
