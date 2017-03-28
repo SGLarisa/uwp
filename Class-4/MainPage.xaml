@@ -26,17 +26,14 @@
 
             <Grid Grid.Column="0">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock HorizontalAlignment="Center" Text="Please Select colours using the sliders bellow."/>
+                    <Viewbox>
+                        <TextBlock HorizontalAlignment="Center" Text="Please Select colours using the sliders bellow."/>
+                    </Viewbox>
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                         <Slider x:Name="RedSlider" Header="Red" Width="200" ValueChanged="Red_Slider_Value_Changed" Maximum="255"/>
                         <Slider x:Name="GreenSlider" Header="Green" Width="200" ValueChanged="Green_Slider_Value_Changed" Maximum="255"/>
                         <Slider x:Name="BlueSlider" Header="Blue" Width="200" ValueChanged="Blue_Slider_Value_Changed" Maximum="255"/>
                         <Button x:Name="DoneButton" Content="Done" HorizontalAlignment="Center" Click="Done_Click"/>
-
-
-
-
-
                     </StackPanel>
                 </StackPanel>
             </Grid>
