@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Viewbox StretchDirection="DownOnly">
+                <TextBlock x:Name="RowOneTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Hex Colour Picker" Foreground="Black" FontSize="72" />
+            </Viewbox>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <StackPanel Orientation="Vertical">
+                    <Viewbox StretchDirection="DownOnly">
+                        <TextBlock HorizontalAlignment="Center" Text="Please Select colours using the sliders bellow." FontSize="48"/>
+                    </Viewbox>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Slider x:Name="RedSlider" Header="Red" Width="200" ValueChanged="Red_Slider_Value_Changed" Maximum="255"/>
+                        <Slider x:Name="GreenSlider" Header="Green" Width="200" ValueChanged="Green_Slider_Value_Changed" Maximum="255"/>
+                        <Slider x:Name="BlueSlider" Header="Blue" Width="200" ValueChanged="Blue_Slider_Value_Changed" Maximum="255"/>
+                        <Viewbox StretchDirection="DownOnly">
+                            <TextBlock x:Name="HexColorTextBlock" HorizontalAlignment="Center" Text="" IsTextSelectionEnabled="True" />
+                        </Viewbox>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="1">
+                <StackPanel x:Name="StackPanelRow2Colum" Orientation="Vertical" Background="White"/>
+                <Rectangle x:Name="BGColor" Fill="Black" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
