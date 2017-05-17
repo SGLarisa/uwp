@@ -9,7 +9,7 @@ If you want you can test them out by creating a new *project* and using the code
 **`ALSO PAY ATTENTION TO THE LIBRARIES INCLUDED`**  
 
 ## Ελληνικά
-Ο εξής φάκελος περιέχει μόνο το αρχείο **XAML** και τον κώδικα **C#** του project.
+Οι εξής φάκελοι περιέχουν μόνο το αρχείο **XAML** και τον κώδικα **C#** του project.
 
 Αν θέλετε να τον δοκιμάσετε, δημιουργείτε ένα καινούργιο *project* στον **Visual Studio** και χρησιμοποιήτε τον κώδικα των αρχείων μέσα στο **MainPage.xaml** και **MainPage.xaml.cs** αντίστοιχα.
 
